@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity2">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_marginTop="75dp"
+        android:id="@+id/logo"
+        android:layout_marginLeft="60dp"/>
+
+    <EditText
+        android:layout_marginTop="110dp"
+        android:layout_alignLeft="@id/logo"
+        android:layout_width="300dp"
+        android:id="@+id/username"
+        android:text="Username"
+        android:layout_below="@id/logo"
+        android:textColorHint="#e0e2e5"
+        android:textSize="15sp"
+        android:drawablePadding="20dp"
+        android:drawableLeft="@drawable/avatar"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_marginTop="40dp"
+        android:layout_alignLeft="@id/logo"
+        android:layout_width="300dp"
+        android:id="@+id/pass"
+        android:text="Password"
+        android:layout_below="@id/username"
+        android:textColorHint="#bdbfc1"
+        padd
+        android:textSize="15sp"
+        android:drawablePadding="20dp"
+        android:drawableLeft="@drawable/key"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="#3E3F41"
+        android:text="LOGIN"
+        android:id="@+id/loginbtn"
+        android:textColor="#FFF"
+        android:textSize="15sp"
+        android:layout_below="@id/pass"
+        android:layout_alignRight="@id/pass"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pass"
+        android:text="Forgot Password"
+        android:textColor="#bdbfc1"
+        android:layout_alignLeft="@id/pass"
+        android:id="@+id/forgot"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_alignBaseline="@id/loginbtn"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/linlay"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        >
+        <EditText
+            android:paddingBottom="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/login"
+            android:text="Don't Have An Account?"
+            android:textStyle="bold"
+            android:textColor="#bdbfc1"
+            android:id="@+id/donthave"
+            android:backgroundTint="@android:color/transparent"/>
+        <EditText
+            android:paddingTop="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/login"
+            android:layout_centerHorizontal="true"
+            android:text="SIGN UP"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@android:color/transparent"/>
+
+    </LinearLayout>
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="____________  or  ____________"
+    android:id="@+id/or"
+    android:layout_centerHorizontal="true"
+    android:backgroundTint="@android:color/transparent"
+    android:textColor="#bdbfc1"
+    android:layout_above="@id/google"
+    />
+<Button
+    android:layout_width="300dp"
+    android:layout_height="50dp"
+    android:layout_centerHorizontal="true"
+    android:drawableLeft="@drawable/ggg"
+android:layout_above="@id/linlay"
+    android:layout_marginTop="30dp"
+    android:background="#3E3F41"
+    android:text="LOGIN WITH GOOGLE"
+    android:layout_alignRight="@id/pass"
+    android:layout_alignLeft="@id/pass"
+    android:layout_marginBottom="20dp"
+    android:id="@+id/google"
+    android:textColor="#FFF"
+    android:textSize="15sp"/>
+</RelativeLayout>
